@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+.ginny00{
+  width: 250px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 12px auto;
+  background: transparent;
+  border: 1px solid var(--gg6);
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.ginny00-left,
+.ginny00-right{
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.ginny00-left{
+  background: transparent;
+}
+
+.ginny00-right{
+  background: rgba(0,0,0,.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.ginny00-toptext{
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--gg6);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-shadow: 0 0 3px rgba(0,0,0,.15);
+}
+
+.ginny00-picframe{
+  position: absolute;
+  left: 50%;
+  top: 98px;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 1px solid var(--gg6);
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.ginny00-picframe img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ginny00-iconbox{
+  width: 92px;
+  height: 92px;
+  border: 2px solid var(--gg6);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ginny00-iconinner{
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--gg6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.ginny00-iconinner i{
+  color: var(--gg6);
+  font-size: 40px;
+  line-height: 1;
+}
+
+.ginny00-bottomtext{
+  text-align: center;
+  color: var(--n4);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  padding: 0 8px 2px;
+  box-sizing: border-box;
+  text-shadow:
+    0 0 1px rgba(0,0,0,.45),
+    0 0 4px rgba(0,0,0,.2);
+}
+
+.ginny00-toptext b,
+.ginny00-bottomtext b{
+  color: var(--n4);
+  font-weight: 700;
+}
+
+.ginny00-toptext u,
+.ginny00-bottomtext u{
+  text-decoration: none;
+  border-bottom: 1px solid var(--gg6);
+  padding-bottom: 1px;
+}
