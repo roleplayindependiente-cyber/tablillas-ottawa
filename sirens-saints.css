@@ -72,7 +72,7 @@ letter-spacing: .4px;
   border: 1px solid color-mix(in srgb, var(--gg6) 45%, transparent);
   border-radius: 50%;
   color: var(--gg6);
-  cursor: help;
+  cursor: none;
   transition: border-color .25s ease, opacity .25s ease, transform .25s ease;
 }
 
