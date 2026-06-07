@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
-@font-face {
-  font-family: "Keposhka";
-  src: url("URL-DE-LA-FUENTE/Keposhka.woff2") format("woff2"),
-       url("URL-DE-LA-FUENTE/Keposhka.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
 .sirens\&saints-shell,
 .sirens\&saints-shell * {
@@ -36,7 +30,7 @@
 
 .sirens\&saints-kicker {
   color: var(--gg6);
-  font: 700 20px/1 "Keposhka", "Cinzel", "Times New Roman", serif;
+  font: 700 20px/1 'Metal Mania', serif;
 letter-spacing: .4px;
   text-align: center;
   text-transform: lowercase;
