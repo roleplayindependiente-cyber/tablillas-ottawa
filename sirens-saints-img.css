@@ -16,7 +16,7 @@
   border-radius: 10px;
   overflow: hidden;
   color: var(--gg6);
-  font-family: 'Montserrat', sans-serif;
+  font: 400 14px/1 'Poppins', sans-serif;
 }
 
 .sirens\&saints-top {
