@@ -208,10 +208,16 @@ letter-spacing: .4px;
 }
 
 .sirens\&saints-mark > img {
-  position: absolute;
-  inset: 11px;
+  position: absolute !important;
+  inset: 11px !important;
+  width: calc(100% - 22px) !important;
+  height: calc(100% - 22px) !important;
+  max-width: none !important;
+  max-height: none !important;
   object-fit: cover;
+  object-position: center;
   border-radius: 10px;
+  z-index: 1;
 }
 
 @media (max-width: 560px) {
@@ -284,9 +290,10 @@ letter-spacing: .4px;
     width: 78px;
   }
 
-  .sirens\&saints-mark .VdMFi-titleicon {
-    font-size: 48px;
-  }
+ .sirens\&saints-mark > img {
+  width: calc(100% - 22px) !important;
+  height: calc(100% - 22px) !important;
+}
 
   .sirens\&saints-body {
     padding: 24px 20px 26px;
