@@ -36,7 +36,8 @@
 
 .sirens\&saints-kicker {
   color: var(--gg6);
-  font: 700 11px/1 "Keposhka", "Cinzel", "Times New Roman", serif;
+  font: 700 18px/1 "Keposhka", "Cinzel", "Times New Roman", serif;
+letter-spacing: .4px;
   text-align: center;
   text-transform: lowercase;
   text-shadow:
@@ -178,7 +179,7 @@
 
 .sirens\&saints-mark {
   position: relative;
-  width: 92px;
+  width: 105px;
   aspect-ratio: 1;
   border-radius: 12px;
   display: grid;
@@ -206,14 +207,20 @@
   transform: rotate(-24deg);
 }
 
-.sirens\&saints-mark .VdMFi-titleicon {
+.sirens\&saints-mark > * {
   position: relative;
   z-index: 1;
   color: var(--gg6);
-  font-size: 58px;
+  font-size: 72px;
   line-height: 1;
   opacity: .42;
   transform: rotate(-8deg);
+}
+
+@media (max-width: 560px) {
+  .sirens\&saints-mark > * {
+    font-size: 58px;
+  }
 }
 
 .sirens\&saints-body {
@@ -231,7 +238,7 @@
   height: 62px;
   margin: 0 -40px;
   overflow: hidden;
-  background: var(--n1) !important;
+  background: var(--n2) !important;
 }
 
 .sirens\&saints-bottom::before {
@@ -242,7 +249,7 @@
     radial-gradient(88px 42px at 13% 2px, var(--gg6) 0 47%, transparent 49%),
     radial-gradient(126px 58px at 56% -16px, var(--gg6) 0 48%, transparent 50%),
     radial-gradient(84px 40px at 92% 5px, var(--gg6) 0 44%, transparent 46%),
-    linear-gradient(180deg, var(--gg6) 0%, var(--n4) 84%) !important;
+    linear-gradient(180deg, var(--gg6) 0%, var(--n2) 84%) !important;
   clip-path: polygon(0 12px, 13% 5px, 27% 18px, 45% 8px, 63% 22px, 80% 9px, 100% 18px, 100% 100%, 0 100%);
   opacity: .76;
 }
