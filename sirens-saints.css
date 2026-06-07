@@ -49,7 +49,7 @@ letter-spacing: .4px;
 
 .sirens\&saints-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--gg6) 34%, var(--n4) 100%);
+  background: linear-gradient(90deg, transparent 0%, var(--gg6) 34%, var(--n2) 100%);
   opacity: .95;
 }
 
