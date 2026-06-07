@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@400;600&display=swap');
+
+.aurum-card{ 
+  width:500px;
+  margin:0 auto!important;
+  padding:0!important;
+  background-color: var(--n2);
+  border: 1px solid transparent; 
+  border-radius:18px;
+  box-sizing:border-box!important;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+.aurum-body{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+  border-top-left-radius:18px;
+  border-top-right-radius:18px;
+}
+
+.aurum-header{
+  position:relative;
+  width:100%;
+  border-bottom: 3px solid var(--n1);
+  border:2px solid color-mix(in srgb,var(--gg6) 35%,transparent);
+  border-bottom:3px solid var(--n1);
+  border-top-left-radius:18px;
+  border-top-right-radius:18px;
+  box-shadow:0 0 6px color-mix(in srgb,var(--gg6) 18%,transparent);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  display:flex;
+  align-items:center;
+  padding:25px 35px;
+  box-sizing:border-box;
+  z-index:2;
+  min-height:95px;
+}
+
+.aurum-header-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  gap:25px;
+}
+
+.aurum-title-area{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  min-width:0;
+}
+
+.aurum-title{
+  background:-webkit-linear-gradient(right,var(--gg6-75)),var(--gg6-75));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:#fff;
+  -webkit-text-stroke:3px transparent;
+  font-size:20px;
+  font-weight:600;
+  letter-spacing:.3px;
+  text-transform:uppercase;
+  word-break:keep-all;
+  overflow-wrap:normal;
+  hyphens:none;
+  line-height:1.15;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.aurum-sub{
+  font-family:'Poppins',sans-serif;
+  font-size: 10px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+  color: #fff;
+  margin-top: 5px;
+  padding-left:20px;
+  position:relative;
+}
+
+.aurum-sub::before{
+  content:"✦";
+  position:absolute;
+  left: 0;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:7px;
+  color:var(--gg6);
+}
+
+.aurum-sub::after{
+  content:"";
+  display:block;
+  width:40px;
+  height:1px;
+  background:linear-gradient(to right,var(--gg6),transparent);
+  margin-top:3px;
+}
+
+.aurum-icon{
+  width:90px;
+  height:90px;
+  min-width:90px;
+  border-radius:50%;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:
+  0 0 8px rgba(0,0,0,0.6),
+  0 0 14px color-mix(in srgb,var(--gg6) 18%,transparent),
+  inset 0 0 18px rgba(0,0,0,0.35);
+  background:
+  radial-gradient(circle at center,
+  color-mix(in srgb,var(--gg6) 16%,transparent) 0%,
+  transparent 68%);
+  transition:all 1s ease;
+  position:relative;
+}
+
+.aurum-icon i{
+  font-size:36px;
+  color:var(--gg6);
+  line-height:1;
+  filter:
+  drop-shadow(0 0 2px color-mix(in srgb,var(--gg6) 55%,transparent))
+  drop-shadow(0 0 8px color-mix(in srgb,var(--gg6) 30%,transparent));
+  transition:all 1s ease;
+}
+
+.aurum-icon:hover{
+  box-shadow:
+  0 0 8px rgba(0,0,0,0.6),
+  0 0 20px color-mix(in srgb,var(--gg6) 28%,transparent),
+  inset 0 0 18px rgba(0,0,0,0.2);
+}
+
+.aurum-icon:hover i{
+  transform:scale(1.05);
+  filter:
+  drop-shadow(0 0 4px color-mix(in srgb,var(--gg6) 70%,transparent))
+  drop-shadow(0 0 12px color-mix(in srgb,var(--gg6) 40%,transparent));
+}
+
+.aurum-text{ 
+  font-family:'Poppins',sans-serif;
+  padding:12px 45px 18px;
+  text-align:justify;
+  font-size:12px;
+  line-height:1.6;
+  letter-spacing:.15px;
+  color: var(--n4)!important;
+  box-sizing:border-box;
+}
+
+.aurum-text::first-letter{
+  font-size:3em;
+  color:var(--gg6);
+  font-weight:700;
+  margin-right:3px;
+  line-height:1;
+}
+
+.aurum-text b,
+.aurum-text i,
+.aurum-text u{
+  color:var(--gg6)!important;
+}
+
+.aurum-text u{
+  text-decoration:none;
+  background:color-mix(in srgb,var(--gg6) 40%,transparent);
+  padding:0 2px;
+  border-radius:2px;
+}
+
+.aurum-footer{
+  width:100%;
+  padding:18px 15px;
+  background:var(--gg6);
+  border-top:1px solid transparent;
+  border-bottom-left-radius:18px;
+  border-bottom-right-radius:18px;
+  text-align:center;
+  font-family:'Poppins',sans-serif;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-weight:600;
+  font-style:italic;
+  color:#fff;
+  text-shadow:
+  0 1px 1px rgba(0,0,0,.14),
+  0 0 4px rgba(255,255,255,.10);
+  box-sizing:border-box;
+}
+
+.aurum-footer .aurum-dot{
+  font-size:10px;
+  font-weight:600;
+  margin:0 6px;
+  color:#fff;
+  text-shadow:
+  0 1px 1px rgba(0,0,0,.14),
+  0 0 4px rgba(255,255,255,.10);
+}
+
+.aurum-card a{
+  color:#fff!important;
+  text-decoration:underline dotted;
+}
+
+.aurum-card a:hover{
+  color:var(--gg6);
+}
