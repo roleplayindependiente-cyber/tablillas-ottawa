@@ -207,7 +207,7 @@ letter-spacing: .4px;
   transform: rotate(-24deg);
 }
 
-.sirens\&saints-mark > img {
+.sirens\&saints-mark-img {
   position: absolute !important;
   inset: 11px !important;
   width: calc(100% - 22px) !important;
