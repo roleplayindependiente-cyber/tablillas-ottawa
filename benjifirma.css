@@ -1,0 +1,66 @@
+.benji-firma {
+  margin: 10px auto;
+  width: 226px;
+  height: 186px;
+  background: var(--n4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.benji-marco {
+  width: 206px;
+  height: 166px;
+  background: #f3eeee;
+  padding: 9px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.benji-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: contrast(1.04) brightness(1.03) saturate(0.94);
+}
+
+.benji-line {
+  position: absolute;
+  height: 1px;
+  background: rgba(20, 20, 20, 0.35);
+  pointer-events: none;
+}
+
+.benji-line-top {
+  width: 58px;
+  top: 17px;
+  left: 16px;
+}
+
+.benji-line-bottom {
+  width: 74px;
+  bottom: 17px;
+  right: 16px;
+}
+
+.benji-marco::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border: 1px solid rgba(255,255,255,.35);
+  pointer-events: none;
+}
+
+.benji-marco::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 1px;
+  right: 18px;
+  top: 27px;
+  background: rgba(255,255,255,.55);
+}
