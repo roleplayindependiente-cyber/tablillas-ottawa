@@ -1,137 +1,317 @@
-.rania00{
-  width:225px;
-  height:200px;
-  margin: 12px auto;
-  position:relative;
-  background:transparent;
-  box-sizing:border-box;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:14px;
-}
-
-.rania01{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-
-  color:var(--n4);
-  font:700 10px/1 Arial, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:4px;
-}
-
-.rania02{
-  color:var(--n4);
-}
-
-.rania03{
-  color:var(--gg6);
-  font-style:italic;
-  font-weight:bold;
-  letter-spacing:5px;
-  text-decoration:underline;
-  text-decoration-color:var(--gg6);
-  text-underline-offset:2px;
-}
-
-.rania04{
-  width:100%;
-  position:relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-.rania05{
-  position:absolute;
-  top:50%;
-  width:46px;
-  height:1px;
-  background:var(--n4);
-}
-
-.rania05:first-of-type{
-  left:8px;
-}
-
-.rania05:last-of-type{
-  right:8px;
-}
-
-.rania06{
-  width:176px;
-  height:112px;
-  position:relative;
-  border:1px solid var(--n4);
-  padding:10px;
-  background:transparent;
-}
-
-.rania07{
-  width:100%;
-  height:100%;
-  border:1px solid var(--n4);
-  overflow:hidden;
-  position:relative;
-}
-
-.rania07::before{
-  content:"";
-  position:absolute;
-  inset:-12px;
-
+.rania00 {
+  width: 270px;
+  height: 258px;
+  margin: 10px auto;
+  padding: 23px 14px 19px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
   background:
-    linear-gradient(var(--n4),var(--n4)) top left / 14px 1px no-repeat,
-    linear-gradient(var(--n4),var(--n4)) top left / 1px 14px no-repeat,
-
-    linear-gradient(var(--n4),var(--n4)) top right / 14px 1px no-repeat,
-    linear-gradient(var(--n4),var(--n4)) top right / 1px 14px no-repeat,
-
-    linear-gradient(var(--n4),var(--n4)) bottom left / 14px 1px no-repeat,
-    linear-gradient(var(--n4),var(--n4)) bottom left / 1px 14px no-repeat,
-
-    linear-gradient(var(--n4),var(--n4)) bottom right / 14px 1px no-repeat,
-    linear-gradient(var(--n4),var(--n4)) bottom right / 1px 14px no-repeat;
+    linear-gradient(
+      145deg,
+      rgba(135, 8, 8, .22),
+      rgba(20, 20, 20, 0) 43%
+    ),
+    #141414;
+  border: 1px solid #870808;
+  box-shadow:
+    0 10px 24px rgba(20, 20, 20, .38),
+    inset 0 0 24px rgba(135, 8, 8, .10);
+  transition:
+    border-color .35s ease,
+    box-shadow .35s ease;
 }
 
-/* IMAGEN */
-
-.rania07 img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+.rania00::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(240, 240, 240, .12);
+  pointer-events: none;
 }
 
-.rania08{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-
-  color:var(--n4);
-  font:700 10px/1 Arial, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:4px;
+.rania11,
+.rania12 {
+  width: 25px;
+  height: 10px;
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  transition: width .35s ease;
 }
 
-.rania09{
-  color:var(--n4);
+.rania11 {
+  top: 7px;
+  left: 7px;
+  border-top: 2px solid #870808;
+  border-left: 2px solid #870808;
 }
 
-.rania10{
-  color:var(--gg6);
-  font-style:italic;
-  font-weight:bold;
-  letter-spacing:5px;
-  text-decoration:underline;
-  text-decoration-color:var(--gg6);
-  text-underline-offset:2px;
+.rania12 {
+  right: 7px;
+  bottom: 7px;
+  border-right: 2px solid #870808;
+  border-bottom: 2px solid #870808;
+}
+
+.rania01,
+.rania08 {
+  width: 210px;
+  min-height: 15px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #f0f0f0;
+  font: 700 9px/1 Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  text-shadow: 0 2px 5px #141414;
+  transition: width .45s ease;
+}
+
+.rania02,
+.rania09,
+.rania03,
+.rania10 {
+  display: inline-block;
+  white-space: nowrap;
+  transition:
+    color .35s ease,
+    letter-spacing .45s ease,
+    text-shadow .35s ease;
+}
+
+.rania03,
+.rania10 {
+  position: relative;
+  color: #b83a3a;
+  font: italic 700 13px/1 Georgia, serif;
+  letter-spacing: 2.4px;
+  text-shadow: 0 0 10px rgba(135, 8, 8, .55);
+}
+
+.rania03::after,
+.rania10::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  background: #b83a3a;
+  box-shadow: 0 0 6px rgba(135, 8, 8, .70);
+  transition:
+    right .35s ease,
+    left .35s ease;
+}
+
+.rania09 {
+  letter-spacing: 2.7px;
+}
+
+.rania04 {
+  width: 100%;
+  height: 148px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rania05 {
+  width: 31px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  background: #870808;
+  transition:
+    width .40s ease,
+    background .35s ease;
+}
+
+.rania05:first-of-type {
+  left: 0;
+}
+
+.rania05:last-of-type {
+  right: 0;
+}
+
+.rania05::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: -2px;
+  background: #b83a3a;
+  border-radius: 50%;
+  box-shadow: 0 0 7px rgba(135, 8, 8, .80);
+}
+
+.rania05:first-of-type::after {
+  right: 0;
+}
+
+.rania05:last-of-type::after {
+  left: 0;
+}
+
+.rania06 {
+  width: 232px;
+  height: 148px;
+  padding: 6px;
+  position: relative;
+  z-index: 4;
+  box-sizing: border-box;
+  background: #141414;
+  border: 1px solid #870808;
+  box-shadow:
+    0 0 0 1px rgba(240, 240, 240, .18),
+    0 9px 17px rgba(20, 20, 20, .55);
+  transition:
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.rania06::before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: -5px;
+  right: 18px;
+  left: 18px;
+  background: #b83a3a;
+  box-shadow: 0 0 7px rgba(135, 8, 8, .70);
+}
+
+.rania06::after {
+  content: "§ 08·08";
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  z-index: 6;
+  padding: 4px 6px 3px;
+  color: #f0f0f0;
+  background: #870808;
+  border: 1px solid #b83a3a;
+  font: 700 7px/1 Arial, sans-serif;
+  letter-spacing: 1.4px;
+  box-shadow: 0 3px 8px rgba(20, 20, 20, .65);
+}
+
+.rania07 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #141414;
+  border: 1px solid rgba(240, 240, 240, .52);
+}
+
+.rania07::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    rgba(135, 8, 8, .42),
+    rgba(20, 20, 20, 0) 35%
+  );
+  opacity: .55;
+  transition: opacity .35s ease;
+}
+
+.rania07::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border: 1px solid rgba(240, 240, 240, .15);
+  box-shadow: inset 0 0 20px rgba(20, 20, 20, .75);
+  pointer-events: none;
+}
+
+.rania07 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 38%;
+  filter:
+    grayscale(100%)
+    contrast(118%)
+    brightness(72%);
+  transform: scale(1.03);
+  transition:
+    transform .55s ease,
+    filter .45s ease;
+}
+
+.rania00:hover {
+  border-color: #b83a3a;
+  box-shadow:
+    0 13px 27px rgba(20, 20, 20, .46),
+    0 0 18px rgba(135, 8, 8, .20),
+    inset 0 0 28px rgba(135, 8, 8, .17);
+}
+
+.rania00:hover .rania01,
+.rania00:hover .rania08 {
+  width: 242px;
+}
+
+.rania00:hover .rania03,
+.rania00:hover .rania10 {
+  color: #f0f0f0;
+  letter-spacing: 3.2px;
+  text-shadow:
+    0 0 8px #870808,
+    0 0 15px rgba(135, 8, 8, .75);
+}
+
+.rania00:hover .rania03::after,
+.rania00:hover .rania10::after {
+  right: -5px;
+  left: -5px;
+}
+
+.rania00:hover .rania05 {
+  width: 38px;
+  background: #b83a3a;
+}
+
+.rania00:hover .rania06 {
+  border-color: #b83a3a;
+  box-shadow:
+    0 0 0 1px rgba(240, 240, 240, .25),
+    0 0 17px rgba(135, 8, 8, .28),
+    0 11px 19px rgba(20, 20, 20, .62);
+}
+
+.rania00:hover .rania07::before {
+  opacity: .82;
+}
+
+.rania00:hover .rania07 img {
+  filter:
+    grayscale(100%)
+    contrast(124%)
+    brightness(84%);
+  transform: scale(1.10);
+}
+
+.rania00:hover .rania11,
+.rania00:hover .rania12 {
+  width: 38px;
 }
